@@ -323,7 +323,21 @@
         menuToggle.addEventListener('click', () => setMenuState(true));
         menuClose.addEventListener('click', () => setMenuState(false));
         backdrop.addEventListener('click', () => setMenuState(false));
-        navigationLinks.forEach((link) => link.addEventListener('click', () => setMenuState(false)));
+        navigationLinks.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                const targetId = link.getAttribute('href');
+                const targetElement = targetId && targetId.startsWith('#') ? document.querySelector(targetId) : null;
+
+                setMenuState(false);
+
+                if (!targetElement) return;
+
+                event.preventDefault();
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                history.pushState(null, '', targetId);
+            });
+        });
+
         document.addEventListener('keydown', (event) => {
             if (event.key === 'Escape') setMenuState(false);
         });
