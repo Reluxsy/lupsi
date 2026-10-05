@@ -385,7 +385,13 @@ Para exercer seus direitos ou esclarecer dúvidas sobre esta Política de Privac
 9. Atualizações  
 Esta Política de Privacidade pode ser atualizada periodicamente. A versão mais recente estará sempre disponível neste site
 
+## ALTERAÇÕES
 
+Na seção HEADER:
+Quando o contato for clicado, colocar uma transição suave até o ponto de destino.
+
+Na seção FAQ:
+Quando estiver em Mobile, colocar o botão no final da lista de perguntas, no desktop manter a configuração original.
 
 
 
