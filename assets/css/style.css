@@ -57,7 +57,7 @@ body {
 .brand img {
     display: block;
     height: auto;
-    max-width: 240px;
+    max-width: 270px;
     width: 100%;
 }
 
@@ -1094,7 +1094,7 @@ body.menu-is-open {
     }
 
     .brand img {
-        max-width: 240px;
+        max-width: 340px;
     }
 
     .menu-toggle,
