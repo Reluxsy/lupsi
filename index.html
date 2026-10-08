@@ -307,6 +307,7 @@
     </footer>
 
     <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <script>smoothscroll.polyfill();</script>
 
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
@@ -325,7 +326,6 @@
         menuToggle.addEventListener('click', () => setMenuState(true));
         menuClose.addEventListener('click', () => setMenuState(false));
         backdrop.addEventListener('click', () => setMenuState(false));
-        smoothscroll.polyfill();
         navigationLinks.forEach((link) => {
             link.addEventListener('click', (event) => {
                 const targetId = link.getAttribute('href');
